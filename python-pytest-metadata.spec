@@ -2,14 +2,14 @@
 # Conditional build:
 %bcond_without	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
-%bcond_without	python3 # CPython 3.x module
+%bcond_with	python3 # CPython 3.x module (built from python3-pytest-metadata.spec)
 
 Summary:	pytest plugin for test session metadata
 Summary(pl.UTF-8):	Wtyczka pytesta do metadanych sesji testowej
 Name:		python-pytest-metadata
 # keep 1.x here for python2 support
 Version:	1.11.0
-Release:	3
+Release:	4
 License:	MPL v2.0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/pytest-metadata/
